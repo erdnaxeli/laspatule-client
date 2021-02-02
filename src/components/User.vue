@@ -34,7 +34,7 @@ export default {
   name: "User",
 
   computed: mapState({
-    user: (state) => state.user,
+    user: state => state.user
   }),
   methods: {
     login() {
@@ -42,7 +42,7 @@ export default {
     },
     logout() {
       this.$store.dispatch("logout");
-    },
-  },
+    }
+  }
 };
 </script>
